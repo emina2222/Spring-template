@@ -29,7 +29,7 @@ public class AppConfig implements WebMvcConfigurer{
 	
 	@Bean
 	public DataSource securityDataSource() {
-ComboPooledDataSource cpd=new ComboPooledDataSource();
+		ComboPooledDataSource cpd=new ComboPooledDataSource();
 		
 		try {
 			cpd.setDriverClass(env.getProperty("jdbc.driver")); //postavlja driver klasu za mssql iz properties fajla
